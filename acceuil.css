@@ -1,0 +1,408 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'verdana';
+    list-style: none;
+    text-decoration: none;
+}
+
+header{
+    /* border: 1px solid black; */
+    height: 90vh;
+    width: 100%;
+    background-image: url('./image/carousel-1.jpg');
+}
+
+.headerContainer{
+    /* border: 5px solid rgb(144, 36, 36); */
+    width: 100%;
+    height: 100%;
+    background-color: #0f2026c8;
+}
+
+.headerContainer .headerTop{
+    /* border: 1px solid black; */
+    width: 100%;
+    height: 20%;
+    margin: 0 auto;
+
+}
+
+.headerContainer .headerTop .bannerContainer{
+    width: 100%;
+    height: 30%;
+    background-color: #4A5260;
+}
+
+.headerContainer .headerTop .banner{
+    /* border: 1px solid rgb(19, 184, 43); */
+    display: flex;
+    justify-content: space-between;
+    width: 90%;
+    height: 100%;
+    margin: 0 auto;
+    background-color: #4A5260;
+    display: flex;
+    align-items: center;
+
+}
+
+.headerContainer .headerTop .banner .bannerLeft{
+    width:50%;
+    /* border: ; */
+}
+
+.headerContainer .headerTop .banner .bannerLeft ul{
+    display: flex;
+    justify-content: space-between;
+    width:100%;
+}
+
+.headerContainer .headerTop .banner .bannerLeft ul li{
+    color: white;
+    font-size: 1em;
+}
+
+.headerContainer .headerTop .banner .bannerRight{
+    width:20%;
+    /* border: 1px solid rgb(19, 184, 43); */
+
+}
+
+.headerContainer .headerTop .banner .bannerRight ul{
+    /* border: 1px solid rgb(19, 184, 43); */
+    display: flex;
+    justify-content: space-between;
+    width:100%;
+}
+
+.headerContainer .headerTop .banner .bannerRight ul li a{
+    color: white;
+    font-size: 1em;
+}
+
+.headerTop .navContainer{
+    width: 100%;
+    height: 70%;
+    border-bottom: thin solid rgb(91, 91, 91);
+
+    /* background-color: red; */
+}
+
+.headerTop nav{
+    height: 100%;
+    width: 90%;
+    margin: 0 auto;
+    display: flex;
+    
+}
+
+.headerTop nav .logo{
+    /* border: 1px solid rgb(19, 184, 43); */
+    width: 15%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    font-size: 2em;
+}
+
+.headerTop nav .logo a{
+    color: white;
+    
+}
+
+menu{
+    width: 60%;
+    height: 100%;
+    /* border: 7px solid rgb(19, 184, 43); */
+    display: flex;
+    justify-content: end;
+    
+
+}
+menu ul{
+    /* border: 6px solid darkgoldenrod; */
+    height: 100%;
+    width: 80%;
+    display: flex;
+    align-items: center;
+    
+}
+
+menu ul li{
+    color: white;
+    height: 100%;
+    width: 20%;
+    /* border: 2px solid rgb(202, 47, 130); */
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+menu ul li a{
+    color: white;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    /* border: 1px solid rgb(0, 255, 4); */
+
+}
+
+menu ul li a:hover{
+    color: #06A3BA;
+    border-bottom: 3px solid #06A3BA;
+}
+
+menu ul li a{
+    color: white;
+    width: 50%;
+}
+
+menu ul li select{
+    border: none;
+    background-color: transparent;
+    color: white;
+    cursor: pointer;
+    height: 100%;
+
+}
+
+menu ul li select:hover{
+    color: #06A3BA;
+    border-bottom: 3px solid #06A3BA;
+}
+
+.headerTop nav .buttonPro{
+    /* border: 1px solid black; */
+    width: 20%;
+    display: flex;
+    align-items: center;
+    justify-content: end;
+
+
+}
+
+.headerTop nav .buttonPro a{
+    height: 40%;
+    width: 80%;
+    background-color: rgb(16, 81, 138);
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+
+.headerTop nav .buttonPro a:hover{
+    background-color: rgb(12, 63, 108);
+}
+
+.headerMiddle{
+    height: 60%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: white;
+}
+
+.headerMiddle h6{
+    font-size: 2em;
+}
+
+.headerMiddle p{
+    font-size: 4em;
+    font-weight: bold;
+}
+
+.headerMiddleBtn{
+    /* border: 1px solid black; */
+    display: flex;
+    width: 25%;
+    height: 15%;
+    justify-content: space-between;
+    margin-top: 3%;
+}
+
+.headerMiddleBtn div{
+    height: 100%;
+    width: 48%;
+}
+
+.headerMiddleBtn div a{
+    height: 100%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #06A3BA;
+    color: white;
+}
+
+.headerMiddleBtn div a:hover{
+    background-color: #0a879a;
+
+}
+
+.headerMiddleBtn div a.btn2{
+    background-color: transparent;
+    border: 2px solid white;
+}
+
+.headerMiddleBtn div a.btn2:hover{
+    background-color: #06A3BA;
+}
+
+.headerBottom{
+    /* border: 3px solid goldenrod; */
+    height: 20%;
+    width: 100%;
+    margin-top: 4.5%;
+}
+
+.headerBottomContainer{
+    /* border: 1px solid red; */
+    margin: 0 auto;
+    height: 100%;
+    width: 80%;
+    display: flex;
+}
+
+.headerBottomContainer .headerBottomContainerItem1{
+    width: 40%;
+    height: 100%;
+    background-color: #06A3BA;
+    /* border: 1px solid greenyellow; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.headerBottomContainer .headerBottomContainerItem1 .icon{
+    /* border: 1px solid black; */
+    height: 40%;
+    width: 20%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 2em;
+    color: #06A3BA;
+    background-color: white;
+}
+
+.headerBottomContainer .headerBottomContainerItem1 .detail{
+    color: white;
+    margin-left: 2%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 36%;
+    font-size: 1.3em;
+}
+
+.headerBottomContainer .headerBottomContainerItem2{
+    width: 40%;
+    height: 100%;
+    background-color: #ffffff;
+    /* border: 1px solid greenyellow; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* border: 1px solid greenyellow; */
+}
+
+.headerBottomContainer .headerBottomContainerItem2 .icon{
+    /* border: 1px solid black; */
+    height: 40%;
+    width: 20%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 2em;
+    color: #ffffff;
+    background-color: #06A3BA;
+}
+
+.headerBottomContainer .headerBottomContainerItem2 .detail{
+    color: #06A3BA;
+    margin-left: 2%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 36%;
+    font-size: 1.3em;
+}
+
+.headerBottomContainer .headerBottomContainerItem2 .detail h5{
+    color: black;
+}
+
+main{
+    height: 2vh;
+    width: 100%;
+    border: 1px solid seagreen;
+    margin-top: 5%;
+}
+
+footer{
+    height: 50vh;
+    width: 100%;
+    border: 5px solid blueviolet;
+    background-color: #4A5260;
+}
+
+.footerContainer{
+    border: 1px solid black;
+    width: 90%;
+    height: 80%;
+    margin: 0 auto;
+    display: flex;
+}
+
+.footerContainer .footerContainerLeft{
+    width: 30%;
+    height: 100%;
+    border: 1px solid white;
+
+}
+
+.footerContainer .footerContainerRight{
+    width: 70%;
+    height: 100%;
+    border: 1px solid white;
+
+}
+
+.footerContainerRightItem1{
+    color: white;
+}
+
+.footerContainerRightItem1 h4{
+    font-size: 1.2em;
+    text-decoration: underline;
+    text
+}
+
+/* .colorBottom{
+    width: 100%;
+    height: 20%;
+    background-color: red;
+} */
+
+/* mediaqueries pour telephone */
+/* 
+@media screen and (max-width:766px) {
+    
+}
+
+@media screen and (min-width:767px) and (max-width:1023px) {
+    
+}
+@media screen and (min-width:1024px) {
+    
+} */
+
+
