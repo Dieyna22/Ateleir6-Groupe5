@@ -1,0 +1,82 @@
+.titre{
+    text-align: center;
+}
+.titre hr{
+    width: 8vh;
+    color: #06A3DA;
+
+}
+.couleur{
+    color: #06A3DA;
+}
+.Address{
+  display:grid;
+  grid-template-columns: 20% 20% 20%;
+  justify-content: center;
+}
+.tel,.mail,.localisation{
+    display:flex;
+}
+.Address .icone{
+    margin: 3vh;
+    background-color: #06A3DA;
+    padding: 2vh;
+    height: 3vh;
+}
+.contenu{
+    display: grid;
+    grid-template-columns: auto auto;
+    justify-content: space-between;
+    margin: 0 18vh;
+    margin-bottom: 14vh;
+    box-shadow: 12px 12px 5px 2px #978d8d5d;
+}
+.form{
+    padding: 6vh;
+    width: 100%;
+}
+.f1{
+    width: 44%;
+    height: 5vh;
+    margin-bottom: 2vh;
+    background-color:#06a2da5d;
+    border: none;
+}
+
+.f2{
+    width:  90%;
+    height: 5vh;
+    margin-bottom: 2vh;
+    background-color:#06a2da5d;
+    border: none;
+}
+.form textarea{
+    width: 90%;
+    margin-bottom: 2vh;
+    background-color: #06a2da5d;
+    border: none;
+}
+::placeholder{
+    color: #747373;
+    padding: 4vh;
+    margin: 4vh;
+}
+.form button{
+    width: 90%;
+    margin-bottom: 2vh;
+    background-color: #06A3DA;
+    color: #fff;
+    border: none;
+    height: 6vh;
+}
+#map{
+    width: 100vh;
+}
+.partenaire{
+    text-align: center;
+    margin-left: 2vh;
+}
+.partenaire img{
+    width: 20vh;
+    height: 10vh;
+}
