@@ -1,0 +1,24 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Verdana';
+}
+
+:root {
+    --main-color: #06A3DA;
+    --second-color: #091E3E;
+}
+
+.grid-contain-service {
+    width: 80%;
+    margin: 0 auto;
+    margin-top: 30px;
+    border: 2px solid red;
+}
+.titre-service{
+    text-align: center;
+}
+.paragraphe-service{
+    text-align: center;
+}
