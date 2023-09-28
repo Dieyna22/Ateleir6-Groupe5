@@ -8,10 +8,13 @@
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
 </head>
 <body>
+    <div id="progress">
+        <span id="progressValue"><i class="bi bi-arrow-up" style="color: white;"></i></span>
+    </div>
     <!-- Header -->
     <header>
         <div class="headerContainer">
-            <div class="headerTop">
+            <div class="headerTop navBar fixed" >
                 <div class="bannerContainer">
                     <div class="banner">
                         <div class="bannerLeft">
@@ -45,7 +48,7 @@
                     </div>
                 </div>
                 <div class="navContainer">
-                    <nav>
+                    <nav class="navBar">
                         <div class="logo"><a href=""><i class="bi bi-person-fill"></i>Startup</a></div>
                         <menu>
                             <ul>
@@ -172,5 +175,58 @@
         </div>
 
     </section>
+    <script>
+        // scroll
+            let calcScrollValue = () => {
+                let scrollProgress = document.getElementById('progress');
+                let scrolProgressValue = document.getElementById('progressValue');
+
+                let pos = document.documentElement.scrollTop;
+                let calcHeight = document.documentElement.scrollHeight - document.documentElement.clientHeight;
+                let scrollValue = Math.round((pos * 100) / calcHeight)
+            console.log(scrollProgress);
+
+                if (pos > 100) {
+                    scrollProgress.style.display = 'grid';
+                } else {
+                    scrollProgress.style.display = 'none';
+                }
+
+                scrollProgress.addEventListener('click', () => {
+                    document.documentElement.scrollTop = 0;
+                })
+
+                scrollProgress.style.background = `conic-gradient(var(--mainColor) ${scrollValue}%, var(--secondColor) ${scrollValue}%)`;
+            }
+
+            // scroll
+            
+                let navBarFixed = () => {
+                    let navBar = document.querySelector(".navBar");
+                    console.log(navBar);
+
+                    let pos = document.documentElement.scrollTop;
+                    console.log(pos)
+
+                    if (pos > 100) {
+                        navBar.classList.add("fixed");
+                        console.log("fixed");
+                    } else {
+                        navBar.style.background = "2222227e";
+                        navBar.classList.remove("fixed");
+                        console.log("not-fixed");
+                    }
+                };
+
+                window.onscroll = navBarFixed;
+                window.onload = navBarFixed;
+
+
+            window.onscroll = calcScrollValue;
+            window.onload = calcScrollValue;
+        
+            
+
+    </script>
 </body>
 </html>
