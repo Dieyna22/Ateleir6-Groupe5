@@ -8,13 +8,13 @@
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
 </head>
 <body>
-    <div id="progress">
-        <span id="progressValue"><i class="bi bi-arrow-up" style="color: white;"></i></span>
-    </div>
     <!-- Header -->
+    <div id="progress">
+        <span id="progressValue">&#x1F815</span>
+    </div>
     <header>
         <div class="headerContainer">
-            <div class="headerTop navBar fixed" >
+            <div class="headerTop">
                 <div class="bannerContainer">
                     <div class="banner">
                         <div class="bannerLeft">
@@ -23,7 +23,7 @@
                                     <i class="bi bi-geo-alt-fill"></i> 123 Yoff, Dakar, Sénégal
                                 </li>
                                 <li><i class="bi bi-telephone-fill"></i> +221 77 111 11 11</li>
-                                <li><i class="bi bi-envelope"></i> info@exemple .com</li>
+                                <li><i class="bi bi-envelope"></i>info@exemple .com</li>
                             </ul>
                         </div>
                         <div class="bannerRight">
@@ -47,8 +47,8 @@
                         </div>
                     </div>
                 </div>
-                <div class="navContainer">
-                    <nav class="navBar">
+                <div class="navContainer navBar">
+                    <nav>
                         <div class="logo"><a href=""><i class="bi bi-person-fill"></i>Startup</a></div>
                         <menu>
                             <ul>
@@ -69,19 +69,48 @@
                                 <li>
                                     <a href="#"><i class="bi bi-search"></i></a>
                                 </li>
+
                             </ul>
                         </menu>
                         <div class="buttonPro"><a href="#">Download Pro version</a></div>
+                        <button class="menuTogler" id="menuTogler">
+                            <i class="bi bi-list test menuToglerIcon" id="menuToglerIcon"></i>
+                        </button>
+                        <div class="dropDownMenu" id="dropdownMenu">
+                            <ul>
+                                <li><a href="#">Home</a></li>
+                                <li><a href="#">About</a></li>
+                                <li><a href="#">Service</a></li>
+                                <li>
+                                    <select name="" id="">
+                                        <option value="">Blog</option>
+                                    </select>
+                                </li>
+                                <li>
+                                    <select name="" id="">
+                                        <option value="">Pages</option>
+                                    </select>
+                                </li>
+                                <li><a href="#">Contact</a></li>
+                                <li>
+                                    <a href="#"><i class="bi bi-search"></i></a>
+                                </li>
+                                <li>
+                                    <a href="#" class="proVersion">Download Pro version</a>
+                                </li>
+                            </ul>
+
+                        </div>
                     </nav>
+
                 </div>
             </div>
             <div class="headerMiddle">
                 <h6>About us</h6>
                 <p><a href="">Home</a> <i class="bi bi-circle"></i> <a href="">About</a></p>
             </div>
-            
         </div>
-    
+
     </header>
     <!-- Debut section Apropos -->
     <section class="content-apropos">
@@ -175,8 +204,118 @@
         </div>
 
     </section>
+    <!-- Debut Footer -->
+    <footer>
+        <div class="footerContainer">
+            <div class="footerContainerLeft">
+                <div class="footerContainerLeftContainer">
+                    <div class="footerContainerLeftLogo">
+                        <a href=""><i class="bi bi-person-fill"></i>Startup</a>
+                    </div>
+                    <div class="footerContainerLeftDetail">
+                        <p>Lorem diam sit erat dolor elitr et, diam lorem justo amet clita stet eos sit. Elitr dolor duo
+                            lorem, elitr clita ipsum sea. Diam amet erat lorem stet eos. Diam amet et kasd eos duo.</p>
+                    </div>
+                    <div class="footerContainerLeftForm">
+                        <form action="">
+                            <input type="email" name="" id="" placeholder="Your Email">
+                            <input type="submit" value="Sign Up">
+                        </form>
+                    </div>
+                </div>
+            </div>
+            <div class="footerContainerRight">
+                <div class="footerContainerRightItem1">
+                    <div class="footerContainerRightItem1Top">
+                        <h4>Get In Touch</h4>
+                    </div>
+                    <div class="footerContainerRightItem1Middle">
+                        <ul>
+                            <li><i class="bi bi-geo-alt"></i> 123 Yoff, Dakar, Sénégal</li>
+                            <li><i class="bi bi-envelope"></i> info@exemple .com</li>
+                            <li><i class="bi bi-telephone"></i> +221 77 111 11 11</li>
+                        </ul>
+                    </div>
+                    <div class="footerContainerRightItem1Bottom">
+                        <ul>
+                            <li>
+                                <a href="#"><i class="bi bi-twitter"></i></a>
+                            </li>
+                            <li>
+                                <a href="#"><i class="bi bi-facebook"></i></a>
+                            </li>
+                            <li>
+                                <a href="#"><i class="bi bi-linkedin"></i></a>
+                            </li>
+                            <li>
+                                <a href="#"><i class="bi bi-instagram"></i></a>
+                            </li>
+                            <li>
+                                <a href="#"><i class="bi bi-youtube"></i></a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="footerContainerRightItem2">
+                    <div class="footerContainerRightItem2Top">
+                        <h4>Quick Links</h4>
+                    </div>
+                    <div class="footerContainerRightItem2Bottom">
+                        <ul>
+                            <li><a href="#"><i class="bi bi-arrow-right"></i> Home</a></li>
+                            <li><a href="#"><i class="bi bi-arrow-right"></i> About Us</a></li>
+                            <li><a href="#"><i class="bi bi-arrow-right"></i> Our Services</a></li>
+                            <li><a href="#"><i class="bi bi-arrow-right"></i> Meet the team</a></li>
+                            <li><a href="#"><i class="bi bi-arrow-right"></i> Latest Blog</a></li>
+                            <li><a href="#"><i class="bi bi-arrow-right"></i> Contact Us</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="footerContainerRightItem2">
+                    <div class="footerContainerRightItem2Top">
+                        <h4>Popular Links</h4>
+                    </div>
+                    <div class="footerContainerRightItem2Bottom">
+                        <ul>
+                            <li><a href="#"><i class="bi bi-arrow-right"></i> Home</a></li>
+                            <li><a href="#"><i class="bi bi-arrow-right"></i> About Us</a></li>
+                            <li><a href="#"><i class="bi bi-arrow-right"></i> Our Services</a></li>
+                            <li><a href="#"><i class="bi bi-arrow-right"></i> Meet the team</a></li>
+                            <li><a href="#"><i class="bi bi-arrow-right"></i> Latest Blog</a></li>
+                            <li><a href="#"><i class="bi bi-arrow-right"></i> Contact Us</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="footerBottom">
+            <div class="footerBottomText">
+    
+                © Your Site Name. All Rights Reserved. Designed by HTML Codex
+    
+                Distributed By:
+                ThemeWagon
+            </div>
+        </div>
+    </footer>
+    
     <script>
-        // scroll
+        //navBar fixed
+            let navBarFixed = () => {
+                let navBar = document.querySelector(".navContainer");
+
+                let pos = document.documentElement.scrollTop;
+                console.log(pos)
+
+                if (pos > 10) {
+                    navBar.classList.add("fixed");
+                    
+                } else {
+                    navBar.classList.remove("fixed");
+                }
+            };
+
+            // scroll
             let calcScrollValue = () => {
                 let scrollProgress = document.getElementById('progress');
                 let scrolProgressValue = document.getElementById('progressValue');
@@ -184,9 +323,7 @@
                 let pos = document.documentElement.scrollTop;
                 let calcHeight = document.documentElement.scrollHeight - document.documentElement.clientHeight;
                 let scrollValue = Math.round((pos * 100) / calcHeight)
-            console.log(scrollProgress);
-
-                if (pos > 100) {
+                if (pos > 10) {
                     scrollProgress.style.display = 'grid';
                 } else {
                     scrollProgress.style.display = 'none';
@@ -196,37 +333,32 @@
                     document.documentElement.scrollTop = 0;
                 })
 
-                scrollProgress.style.background = `conic-gradient(var(--mainColor) ${scrollValue}%, var(--secondColor) ${scrollValue}%)`;
+                scrollProgress.style.background = `conic-gradient( #06A3DA ${scrollValue}%, white ${scrollValue}%)`;
             }
 
-            // scroll
-            
-                let navBarFixed = () => {
-                    let navBar = document.querySelector(".navBar");
-                    console.log(navBar);
+            // Ajouter un seul gestionnaire d'événements
+            window.addEventListener('scroll', () => {
+                navBarFixed();
+                calcScrollValue();
+            });
 
-                    let pos = document.documentElement.scrollTop;
-                    console.log(pos)
+            // Exécutez les fonctions une fois au chargement de la page
+            window.addEventListener('load', () => {
+                navBarFixed();
+                calcScrollValue();
+            });
 
-                    if (pos > 100) {
-                        navBar.classList.add("fixed");
-                        console.log("fixed");
-                    } else {
-                        navBar.style.background = "2222227e";
-                        navBar.classList.remove("fixed");
-                        console.log("not-fixed");
-                    }
-                };
+            //menu
+            let menuTogler = document.querySelector('.menuTogler');
+            let menuToglerIcon = document.querySelector('.menuTogler i');
+            let dropDownMenu = document.querySelector('.dropDownMenu');
 
-                window.onscroll = navBarFixed;
-                window.onload = navBarFixed;
+            menuTogler.onclick = function () {
+                dropDownMenu.classList.toggle('open');
+                let isOpen = dropDownMenu.classList.contains('open');
 
-
-            window.onscroll = calcScrollValue;
-            window.onload = calcScrollValue;
-        
-            
-
+                menuToglerIcon.classList = isOpen ? 'bi bi-x ' : 'bi bi-list ';
+            }
     </script>
 </body>
 </html>
