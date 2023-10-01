@@ -653,10 +653,36 @@ nav button:hover {
 }
 .deco{
     width: 20%;
-    border: 2px solid var(--main-color);
-    margin-left:15px;
+    margin-left:12px;
     border-radius: 5px;
+    height: 5px;
+    border-radius: 50px;
+    background-color: var(--main-color);
 }
+
+.animation-hr {
+    display: block;
+    position: relative;
+    width: 10%;
+    height: 100%;
+    background-color: white;
+    animation: defilement ease-in-out 4s infinite;
+}
+
+@keyframes defilement {
+    0% {
+        left: 0%;
+    }
+
+    50% {
+        left: 90%;
+    }
+
+    100% {
+        left: 0%;
+    }
+}
+
 .paragraphe{
     padding: 15px;
     font-size: 15px;
@@ -766,11 +792,11 @@ nav button:hover {
 }
 .hr-membre{
     width: 10%;
-    border: 2px solid var(--main-color);
     border-radius: 5px;
-    margin: 0 auto;
-    margin-top: 10px;
-    margin-bottom: 20px;
+    margin: 10px auto 20px;
+    height: 5px;
+    background-color: var(--main-color);
+
 }
 .name{
     padding: 10px;
@@ -803,6 +829,26 @@ nav button:hover {
     height: auto;
 }
 
+              
+.slide {
+    animation-name: slide;
+    animation-duration: 1s;
+    animation-iteration-count: infinite;
+}
+
+@keyframes slide {
+    0% {
+        transform: translateX(0);
+    }
+
+    50% {
+        transform: translateX(20px);
+    }
+
+    100% {
+        transform: translateX(0);
+    }
+}
 
 /* footer */
 footer {

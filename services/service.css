@@ -644,13 +644,36 @@ nav button:hover {
     padding: 15px;
     margin-top: 90px;
 }
-.hr-services{
+
+.hr-services {
     width: 15%;
-    border: 2px solid var(--main-color);
     border-radius: 5px;
+    height: 5px;
+    margin: 20px auto;
+    background-color: var(--main-color);
+}
+
+.animation-hr {
     display: block;
-    margin: 0 auto;
-    margin-top: 20px;
+    position: relative;
+    width: 10%;
+    height: 100%;
+    background-color: white;
+    animation: defilement ease-in-out 4s infinite;
+}
+
+@keyframes defilement {
+    0% {
+        left: 0%;
+    }
+
+    50% {
+        left: 90%;
+    }
+
+    100% {
+        left: 0%;
+    }
 }
 
 .paragraphe-service{
