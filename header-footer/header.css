@@ -1,0 +1,411 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'verdana';
+    list-style: none;
+    text-decoration: none;
+}
+html{
+    scroll-behavior: smooth;
+    transition: 0.5s;
+  }
+
+#progress{
+    background-color: #061429;
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    height: 50px;
+    width: 50px;
+    display: none;
+    place-items: center;
+    /* border-radius: 50%; */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    cursor: pointer;
+  }
+  
+  #progressValue{
+    display: block;
+    height: calc(100% - 15px);
+    width: calc(100% - 15px);
+    background-color: #06A3DA;
+    /* border-radius: 50%; */
+    display: grid;
+    place-items: center;
+    font-size: 20px;
+    color: white;
+    font-weight: bold;
+  }
+
+
+header{
+    /* border: 1px solid black; */
+    height: 70vh;
+    width: 100%;
+    margin-bottom: 3vh;
+    background-image: url('./image/carousel-1.jpg');
+}
+
+.headerContainer{
+    /* border: 5px solid rgb(144, 36, 36); */
+    width: 100%;
+    height: 100%;
+    background-color: #0f2026c8;
+}
+
+.headerContainer .headerTop{
+    /* border: 1px solid black; */
+    width: 100%;
+    height: 20%;
+    margin: 0 auto;
+
+}
+
+.headerContainer .headerTop .bannerContainer{
+    width: 100%;
+    height: 30%;
+    background-color: #061429;
+}
+
+.headerContainer .headerTop .banner{
+    /* border: 1px solid rgb(19, 184, 43); */
+    display: flex;
+    justify-content: space-between;
+    width: 90%;
+    height: 100%;
+    margin: 0 auto;
+    background-color: #061429;
+    display: flex;
+    align-items: center;
+
+}
+
+.headerContainer .headerTop .banner .bannerLeft{
+    width:50%;
+    /* border: ; */
+}
+
+.headerContainer .headerTop .banner .bannerLeft ul{
+    display: flex;
+    justify-content: space-between;
+    width:100%;
+}
+
+.headerContainer .headerTop .banner .bannerLeft ul li{
+    color: white;
+    font-size: 1em;
+}
+
+.headerContainer .headerTop .banner .bannerRight{
+    width:20%;
+    /* border: 1px solid rgb(19, 184, 43); */
+
+}
+
+.headerContainer .headerTop .banner .bannerRight ul{
+    /* border: 1px solid rgb(19, 184, 43); */
+    display: flex;
+    justify-content: space-between;
+    width:100%;
+}
+
+.headerContainer .headerTop .banner .bannerRight ul li a{
+    color: white;
+    font-size: 1em;
+}
+
+.headerTop .navContainer{
+    width: 100%;
+    height: 70px;
+    border: thin solid #061429;
+    
+    /* background-color: red; */
+}
+
+.headerTop .navContainer.fixed{
+    position: fixed;
+    top: 0;
+    background-color: #061429;
+    z-index: 3;
+}
+
+.headerTop nav{
+    height: 100%;
+    width: 90%;
+    margin: 0 auto;
+    display: flex;
+    
+}
+
+.headerTop nav .logo{
+    /* border: 1px solid rgb(19, 184, 43); */
+    width: 15%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    font-size: 2em;
+}
+
+.headerTop nav .logo a{
+    color: white;
+    
+}
+
+menu{
+    width: 60%;
+    height: 100%;
+    /* border: 7px solid rgb(19, 184, 43); */
+    display: flex;
+    justify-content: end;
+    
+
+}
+menu ul{
+    /* border: 6px solid darkgoldenrod; */
+    height: 100%;
+    width: 80%;
+    display: flex;
+    align-items: center;
+    
+}
+
+menu ul li{
+    color: white;
+    height: 100%;
+    width: 20%;
+    /* border: 2px solid rgb(202, 47, 130); */
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+menu ul li a{
+    color: white;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    /* border: 1px solid rgb(0, 255, 4); */
+
+}
+
+menu ul li a:hover{
+    color: #06A3BA;
+    border-bottom: 3px solid #06A3BA;
+}
+
+menu ul li a{
+    color: white;
+    width: 50%;
+}
+
+menu ul li select{
+    border: none;
+    background-color: transparent;
+    color: white;
+    cursor: pointer;
+    height: 100%;
+
+}
+
+menu ul li select:hover{
+    color: #06A3BA;
+    border-bottom: 3px solid #06A3BA;
+}
+
+.headerTop nav .buttonPro{
+    /* border: 1px solid black; */
+    width: 20%;
+    display: flex;
+    align-items: center;
+    justify-content: end;
+}
+
+.headerTop nav .buttonPro a{
+    height: 40%;
+    width: 80%;
+    background-color: rgb(16, 81, 138);
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.headerTop nav .buttonPro a:hover{
+    background-color: rgb(12, 63, 108);
+}
+
+.headerMiddle{
+    height: 60%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: white;
+}
+
+.headerMiddle h6{
+    font-size: 3em;
+}
+
+.headerMiddle p{
+    font-size: 1em;
+    font-weight: bold;
+}
+nav button{
+    font-size: 2em;
+    color: white;
+    border: none;
+    background-color: transparent;
+    cursor: pointer;
+    height: 100%;
+    display: none;
+}
+
+nav button:hover{
+    color: #06A3BA;
+    border-bottom: 3px solid #06A3DA;
+}
+
+.dropDownMenu{
+    /* border: 1px solid black; */
+    position: fixed;
+    top: 12%;
+    right: 8%;
+    height: 0;
+    width: 200px;
+    background-color: #06a2ba49;
+    backdrop-filter: blur(15px);
+    overflow: hidden;
+    display: none;
+    transition: height 0.2s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+}
+
+.dropDownMenu ul li{
+    line-height: 1.5em;
+}
+
+.dropDownMenu ul li a{
+    display: block;
+    color: white;
+    transition: transform 0.3s;
+}
+
+.dropDownMenu ul li a:hover{
+    color: #06A3DA;
+    transform: translateX(5px);
+}
+
+.dropDownMenu ul li a.proVersion{
+    background-color: #061429;
+    width: 100%;
+    text-align: center;
+}
+
+.dropDownMenu select{
+    background-color: transparent;
+    border: none;
+    display: block;
+    color: white;
+    transition: transform 0.3s;
+    font-size: 1em;
+}
+
+.dropDownMenu select:hover{
+    color: #06A3DA;
+    transform: translateX(5px);
+}  
+.dropDownMenu.open{
+    height: 35%;
+  }
+  
+@media screen and (min-width:767px) and (max-width:1023px) {
+    .headerContainer .headerTop .bannerContainer{
+        display: none;
+    }
+
+    .headerTop nav .logo{
+        width: 30%;
+    }
+
+    menu ul li a{
+        display: none;
+    }
+
+    menu ul li select{
+        display: none;
+    }
+
+    .headerTop nav .buttonPro{
+        display: none;
+    }
+
+    nav button{
+        display: block;
+        width: 10%;
+    }
+
+    .dropDownMenu{
+        display: block;
+    }
+
+    .headerMiddle{
+        /* border: 1px solid rgb(169, 27, 27); */
+        height: 40%;
+    }
+
+    .headerMiddle h6{
+        font-size: 2em;
+    }
+    
+    .headerMiddle p{
+        font-size: 1em;
+    }  
+}
+
+@media only  screen and (max-width:900px) {
+    .headerContainer .headerTop .bannerContainer{
+        display: none;
+    }
+
+    .headerTop nav .logo{
+        width: 30%;
+    }
+
+    menu ul li a{
+        display: none;
+    }
+
+    menu ul li select{
+        display: none;
+    }
+
+    .headerTop nav .buttonPro{
+        display: none;
+    }
+
+    nav button{
+        display: block;
+        width: 10%;
+    }
+
+    .dropDownMenu{
+        display: block;
+    }
+
+    .headerMiddle{
+        /* border: 1px solid rgb(169, 27, 27); */
+        height: 40%;
+    }
+
+    .headerMiddle h6{
+        font-size: 2em;
+    }
+    
+    .headerMiddle p{
+        font-size: 1em;
+    }
+
+}
